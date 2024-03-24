@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* DESKTOP SCREEN */
+@media (min-height: 769px) {
+  .animation {
+    height:5.5rem;
+    overflow:hidden;
+    margin-left: 0rem;
+    width:max-content;
+  }
+  
+  .animation > div > div {
+    padding: 0.8rem 0.75rem;
+    height:5.5rem;
+    margin-bottom: 5rem;
+    display:inline-block;
+  }
+  
+  .animation div:first-child {
+    animation: text-animation 8s infinite;
+  }
+  
+  .first div {
+    @apply rounded;
+    background-color:#2181ff;
+  }
+  .second div {
+    @apply rounded;
+    padding: 0.6rem;
+    background-color:#edb611;
+  }
+  .third div {
+    @apply rounded;
+    padding: 0.6rem;
+    background-color:#bd1929;
+  }
+  
+  @keyframes text-animation {
+    0% {margin-top: 0rem;}
+    10% {margin-top: 0rem;}
+    20% {margin-top: -8.9rem;}
+    30% {margin-top: -8.9rem;}
+    40% {margin-top: -18.6rem;}
+    60% {margin-top: -18.6rem;}
+    70% {margin-top: -8.9rem;}
+    80% {margin-top: -8.9rem;}
+    90% {margin-top: 0;}
+    100% {margin-top: 0;}
+  }}
+
+
+/* MOBILE SCREEN */
+  @media only screen and (max-width: 768px) {
+  .animation {
+    height:3.6rem;
+    overflow:hidden;
+    margin-bottom: 2rem;
+  }
+  
+  .animation > div > div {
+    padding: 0.2rem 0.75rem;
+    height:3.5rem;
+    margin-bottom: 3rem;
+    display:inline-block;
+  }
+  
+  .animation div:first-child {
+    animation: text-animation 8s infinite;
+  }
+  
+  .first div {
+    @apply rounded;
+    background-color:#2181ff;
+  }
+  .second div {
+    @apply rounded;
+    background-color:#edb611;
+  }
+  .third div {
+    @apply rounded;
+    background-color:#bd1929;
+  }
+  
+  @keyframes text-animation {
+    0% {margin-top: 0;}
+    10% {margin-top: 0;}
+    20% {margin-top: -6.1rem;}
+    30% {margin-top: -6.1rem;}
+    40% {margin-top: -12.4rem;}
+    60% {margin-top: -12.4rem;}
+    70% {margin-top: -6.1rem;}
+    80% {margin-top: -6.1rem;}
+    90% {margin-top: 0;}
+    100% {margin-top: 0;}
+  }}
