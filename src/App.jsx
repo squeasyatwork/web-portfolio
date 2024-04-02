@@ -6,6 +6,7 @@ import Navbar from './Components/Navbar/Navbar';
 import Experience from './Components/Experience/Experience';
 import Footer from './Components/Footer/Footer';
 import ComingSoon from './Components/ComingSoon/ComingSoon';
+import Projects from './Components/Projects/Projects';
 
 function App() {
   return (
@@ -26,9 +27,13 @@ function App() {
 
       </Helmet>
       {/* <Navbar></Navbar> */}
+
       <Intro />
-      <ComingSoon targetDate="2024-04-03T00:00:00" />
-      {/* <Experience /> */}
+      {/* <ComingSoon targetDate="2024-04-03T00:00:00" /> */}
+      <header className='w-3/5 lg:w-1/3 border-t-2 border-slate-100 lg:mt-4 -mt-2 lg:-mb-28 -mb-8 mx-auto lg:text-6xl text-4xl text-slate-500 font-thin text-center'>Experience</header>
+      <Experience />
+      <header className='w-3/5 lg:w-1/3 border-t-2 border-slate-100 lg:mt-4 -mt-2 lg:-mb-28 -mb-8 mx-auto lg:text-6xl text-4xl text-slate-500 font-thin text-center'>Projects</header>
+      <Projects />
       <Footer />
 
     </div>
