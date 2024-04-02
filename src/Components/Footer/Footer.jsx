@@ -9,26 +9,25 @@ const Footer = () => {
         Get in touch
       </div>
       <div className="w-screen flex justify-center space-x-4">
-        <a
-          href="https://github.com/squeasyatwork"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <GitHubIcon
-            className="rounded-md hover:shadow-md hover:shadow-[#429feb66]"
-            fontSize="xl"
-          />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/abdullahmalek99/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <LinkedInIcon
-            className="rounded-md hover:shadow-md hover:shadow-[#429feb66]"
-            fontSize="xl"
-          />
-        </a>
+        <div className="rounded-3xl opacity-80 hover:opacity-100 hover:shadow-md hover:shadow-[#999999]/30 transition duration-400 ease-in hover:ease-in">
+          <a
+            href="https://github.com/squeasyatwork"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <GitHubIcon fontSize="xl" />
+          </a>
+        </div>
+
+        <div className="rounded-xl opacity-80 hover:opacity-100 hover:shadow-md hover:shadow-[#999999]/30 transition duration-400 ease-in hover:ease-in">
+          <a
+            href="https://www.linkedin.com/in/abdullahmalek99/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <LinkedInIcon fontSize="xl" />
+          </a>
+        </div>
       </div>
     </div>
   );

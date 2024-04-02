@@ -5,7 +5,10 @@ const Skills = () => {
   const enggSkills = ["Redis", "C# .NET", "AWS/Azure", "Python/Java", "SQL"];
 
   return (
-    <div className="flex flex-col items-start text-lg lg:text-2xl relative w-9/10 lg:w-3/5 mt-16 lg:mt-28 mb-12 lg:mb-16 mx-4 lg:mx-auto p-2 py-4">
+    <div
+      id="skills"
+      className="flex flex-col items-start text-lg lg:text-2xl relative w-9/10 lg:w-3/5 mt-16 lg:mt-28 mb-12 lg:mb-16 mx-4 lg:mx-auto p-2 py-4"
+    >
       <div className="w-3/5 lg:w-1/3 border-t-2 border-slate-100 -mt-2 lg:mt-4 lg:pt-3 mx-auto lg:text-6xl text-4xl text-slate-500 font-thin text-center">
         Skills
       </div>

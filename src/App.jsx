@@ -34,13 +34,8 @@ function App() {
       <Intro />
       <Skills />
       {/* <ComingSoon targetDate="2024-04-03T00:00:00" /> */}
-      <header className="w-3/5 lg:w-1/3 border-t-2 border-slate-100 -mt-2 pt-0 lg:pt-3 lg:-mb-28 -mb-8 mx-auto lg:text-6xl text-4xl text-slate-500 font-thin text-center">
-        Experience
-      </header>
+
       <Experience />
-      <header className="w-3/5 lg:w-1/3 border-t-2 border-slate-100 lg:mt-4 -mt-2 lg:-mb-28 -mb-8 mx-auto pt-0 lg:pt-2 lg:text-6xl text-4xl text-slate-500 font-thin text-center">
-        Projects
-      </header>
       <Projects />
       <Footer />
     </div>
