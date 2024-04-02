@@ -41,7 +41,7 @@ const Experience = () => {
   ];
 
   return (
-    <div className="bg-[#2181ff]/5 rounded-lg text-lg lg:text-2xl relative w-9/10 lg:w-3/5 my-16 lg:my-40 mx-4 lg:mx-auto p-2 py-4 h-96 overflow-auto">
+    <div className="bg-[#2181ff]/5 transition duration-400 ease-in hover:ease-in hover:shadow-md hover:shadow-[#2181ff]/30 rounded-lg text-lg lg:text-2xl relative w-9/10 lg:w-3/5 mt-12 lg:mt-36 mb-20 lg:mb-24 mx-4 lg:mx-auto p-2 py-4">
       <Carousel indicatorIconButtonProps={{ style: { display: "none" } }}>
         {data.map((item, index) => {
           return (
@@ -58,12 +58,17 @@ const Experience = () => {
               </div>
               <div className="-mt-20 text-left font-semibold text-slate-400 sm:text-2xl lg:text-3xl">
                 {item.workplace === "Kookies" && (
-                  <a className='underline underline-offset-4 italic' href="https://www.kookies.io" target="_blank">
+                  <a
+                    className="underline underline-offset-4 italic"
+                    href="https://www.kookies.io"
+                    target="_blank"
+                  >
                     {item.workplace}
                   </a>
                 )}
                 {item.workplace === "Monash University" && (
                   <a
+                    className="underline underline-offset-4 italic"
                     href="https://main.d2siytxacema5v.amplifyapp.com/"
                     target="_blank"
                   >
