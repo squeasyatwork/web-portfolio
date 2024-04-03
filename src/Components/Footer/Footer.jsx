@@ -4,7 +4,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 const Footer = () => {
   return (
-    <div className="w-screen mb-2 lg:mx-0 mt-10 lg:mt-20 text-3xl text-center lg:text-5xl">
+    <div className="w-screen mb-2 lg:mx-0 mt-10 lg:mt-20 text-3xl text-center lg:text-5xl bg-slate-100">
       <div className="w-3/5 lg:w-1/4 border-t-2 border-slate-100 lg:mt-4 -mt-2 mx-auto  text-slate-500 ">
         Get in touch
       </div>

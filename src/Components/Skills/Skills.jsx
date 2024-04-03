@@ -13,12 +13,12 @@ const Skills = () => {
         Skills
       </div>
       <div className="-mt-6 lg:-mt-4 relative w-full flex flex-wrap items-center justify-center lg:justify-start space-x-1 lg:space-x-4 space-y-4 lg:space-y-6 p-4">
-        <div className="-mb-4 lg:-mb-6 border-2 border-[#2181ff]/50 rounded-2xl lg:rounded-3xl p-2 lg:p-4 hover:border-[#2181ff]/80 hover:shadow-sm hover:shadow-[#2181ff]/30 transition duration-400 ease-out hover:ease-out">
+        <div className="-mb-4 lg:-mb-6 border-2 border-[#73C2FB]/70 rounded-2xl lg:rounded-3xl p-2 lg:p-4 hover:border-[#73C2FB]/100 hover:shadow-sm hover:shadow-[#73C2FB]/30 transition duration-400 ease-out hover:ease-out">
           Agile SCRUM
         </div>
         {enggSkills.map((skill) => {
           return (
-            <div className="border-2 border-[#2181ff]/50 rounded-2xl lg:rounded-3xl p-2 lg:p-4 hover:border-[#2181ff]/80 hover:shadow-sm hover:shadow-[#2181ff]/30 transition duration-400 ease-out hover:ease-out">
+            <div className="border-2 border-[#73C2FB]/70 rounded-2xl lg:rounded-3xl p-2 lg:p-4 hover:border-[#73C2FB]/100 hover:shadow-sm hover:shadow-[#73C2FB]/30 transition duration-400 ease-out hover:ease-out">
               {skill}
             </div>
           );

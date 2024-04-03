@@ -29,7 +29,7 @@ function App() {
         />
         <title>Malik: Portfolio</title>
       </Helmet>
-      {/* <Navbar></Navbar> */}
+      <Navbar></Navbar>
 
       <Intro />
       <Skills />

@@ -45,7 +45,7 @@ const Experience = () => {
       <div className="w-3/5 lg:w-1/3 border-t-2 border-slate-100 -mt-2 lg:mt-4 lg:pt-2 mx-auto lg:text-6xl text-4xl text-slate-500 font-thin text-center">
         Experience
       </div>
-      <div className="bg-[#2181ff]/5 transition duration-400 ease-in hover:ease-in hover:shadow-md hover:shadow-[#2181ff]/30 rounded-lg text-lg lg:text-2xl relative w-9/10 lg:w-3/5 mt-3 lg:mt-7 mb-20 lg:mb-24 mx-4 lg:mx-auto p-2 py-4">
+      <div className="bg-[#73C2FB]/30 transition duration-400 ease-in hover:ease-in hover:shadow-md shadow-gray-100  rounded-lg text-lg lg:text-2xl relative w-9/10 lg:w-3/5 mt-3 lg:mt-7 mb-20 lg:mb-24 mx-4 lg:mx-auto p-2 py-4">
         <Carousel indicatorIconButtonProps={{ style: { display: "none" } }}>
           {data.map((item, index) => {
             return (
