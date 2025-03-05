@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const Skills = () => {
   const webDevSkills = ["Tailwind CSS", "JavaScript", "React Redux"];
@@ -13,21 +14,33 @@ const Skills = () => {
         Skills
       </div>
       <div className="-mt-6 lg:-mt-4 relative w-full flex flex-wrap items-center justify-center lg:justify-start space-x-1 lg:space-x-4 space-y-4 lg:space-y-6 p-4">
-        <div className="-mb-4 lg:-mb-6 border-2 border-[#73C2FB]/70 rounded-2xl lg:rounded-3xl p-2 lg:p-4 hover:border-[#73C2FB]/100 hover:shadow-sm hover:shadow-[#73C2FB]/30 transition duration-400 ease-out hover:ease-out">
+        <motion.div
+          initial={{ rotate: 0 }}
+          whileHover={{ rotate: -1 }}
+          className="-mb-4 lg:-mb-6 border-2 border-[#73C2FB]/70 rounded-2xl lg:rounded-3xl p-2 lg:p-4 hover:border-[#73C2FB]/100 hover:shadow-sm hover:shadow-[#73C2FB]/30 transition duration-400 ease-out hover:ease-out"
+        >
           Agile SCRUM
-        </div>
-        {enggSkills.map((skill) => {
+        </motion.div>
+        {enggSkills.map((skill, index) => {
           return (
-            <div className="border-2 border-[#73C2FB]/70 rounded-2xl lg:rounded-3xl p-2 lg:p-4 hover:border-[#73C2FB]/100 hover:shadow-sm hover:shadow-[#73C2FB]/30 transition duration-400 ease-out hover:ease-out">
+            <motion.div
+              initial={{ rotate: 0 }}
+              whileHover={{ rotate: index % 2 == 0 ? 1 : -1 }}
+              className="border-2 border-[#73C2FB]/70 rounded-2xl lg:rounded-3xl p-2 lg:p-4 hover:border-[#73C2FB]/100 hover:shadow-sm hover:shadow-[#73C2FB]/30 transition duration-400 ease-out hover:ease-out"
+            >
               {skill}
-            </div>
+            </motion.div>
           );
         })}
-        {webDevSkills.map((skill) => {
+        {webDevSkills.map((skill, index) => {
           return (
-            <div className="border-2 border-[#edb611]/50 rounded-2xl lg:rounded-3xl p-2 lg:p-4 hover:border-[#edb611]/80 hover:shadow-sm hover:shadow-[#edb611]/30 transition duration-400 ease-out hover:ease-out">
+            <motion.div
+              initial={{ rotate: 0 }}
+              whileHover={{ rotate: index % 2 == 0 ? -1 : 1 }}
+              className="border-2 border-[#edb611]/50 rounded-2xl lg:rounded-3xl p-2 lg:p-4 hover:border-[#edb611]/80 hover:shadow-sm hover:shadow-[#edb611]/30 transition duration-400 ease-out hover:ease-out"
+            >
               {skill}
-            </div>
+            </motion.div>
           );
         })}
       </div>

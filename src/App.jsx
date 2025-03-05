@@ -1,11 +1,9 @@
-import logo from "./logo.svg";
 import "./index.css";
 import { Helmet } from "react-helmet";
 import Intro from "./Components/Intro/Intro";
 import Navbar from "./Components/Navbar/Navbar";
 import Experience from "./Components/Experience/Experience";
 import Footer from "./Components/Footer/Footer";
-import ComingSoon from "./Components/ComingSoon/ComingSoon";
 import Projects from "./Components/Projects/Projects";
 import Skills from "./Components/Skills/Skills";
 
@@ -13,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <Helmet>
-        <meta property="og:title" content="Malik: Portfolio" />
+        <meta property="og:title" content="Abdullah Malik: Portfolio" />
         <meta property="og:image" content="..\public\favicon.ico" />
         <meta property="og:url" content="https://www.abdullahmalek.com" />
         <meta property="og:type" content="website" />
