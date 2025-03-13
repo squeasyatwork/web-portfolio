@@ -24,15 +24,14 @@ const Intro = () => {
           ></img>
         </div>
         <div className="animation text-4xl lg:text-5xl text-center lg:text-right text-white">
-          <div className="first">
+          <div className="first font-semibold">
             <div>Software Engineer</div>
           </div>
-          <div className="second">
-            <div>Web Developer</div>
+          <div className="third font-semibold">
+            <div>Business Analyst</div>
           </div>
-          <div className="third">
-            {" "}
-            <div>Project Manager</div>
+          <div className="second font-semibold">
+            <div>Web Developer</div>
           </div>
         </div>
       </div>
